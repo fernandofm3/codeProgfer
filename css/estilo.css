@@ -15,22 +15,20 @@
         background-color: black;
         padding: 10px 20px 10px 20px;        
     }
-
-    nav .div-nav-mobile, nav .div-nav-tablet-descktop {
+    
+    nav .div-nav-mobile, nav .div-nav-tablet-desktop {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    nav .div-nav-tablet-descktop {
+    nav .div-nav-tablet-desktop {
         display: none;
     }
 
-    nav .div-nav-mobile .logo-empresa, nav .div-nav-tablet-descktop  .logo-empresa {
-        color: #ccc;
-        font-size: 1.25rem;
-        font-weight: bold;
+    nav .div-nav-mobile .logo-empresa img, nav .div-nav-tablet-desktop .logo-empresa img {
+        width: 150px;
     }
 
     nav .div-nav-mobile .btn-nav-mobile {       
@@ -46,17 +44,237 @@
         font-weight: bold;        
     }
 
+    nav .div-nav-mobile .btn-nav-mobile .span-btn-close {        
+        display: none;
+    }
+
+    nav .div-nav-mobile .lista-nav-menu-mobile {   
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 65px;                
+        left: 0;
+        height: 0px;
+        list-style: none;        
+        background-color: #222;
+        z-index: 1000;        
+        visibility: hidden;
+        overflow-y: hidden;        
+        transition: 0.5s;        
+    }
+
+    #nav-header.active .lista-nav-menu-mobile {        
+        height: calc(100vh - 65px);  
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    nav .div-nav-mobile .lista-nav-menu-mobile li a {  
+        display: block;
+        width: 100%;         
+        padding: 20px 20px 20px 20px;         
+        border-bottom: 1px solid #333;    
+        text-decoration: none;
+        color: #ccc;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {  
+        background-color: #333;
+    }
+
 /***********************************/
 
 
 /**** Banner ***********************/
+    .banner { 
+        position: relative;       
+        padding: 20px;
+        background-color: #fff;        
+        background-image: linear-gradient(to top right, #fff, #eee, #909090);        
+        border-bottom: 10px solid #E67E22;
+    }
 
+    .banner h1{
+        display: flex;
+        flex-direction: column;        
+        margin-top: 10px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .banner h1 span{
+        width: 50px;
+        border: 3px solid #0984E3;       
+        margin-top: 10px;
+    }
+
+    .banner .div-principal-profissao-foto {
+        display: flex;
+        flex-direction: row;    
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 60%;
+        height: 90px;        
+        margin-top: 30px;        
+        padding-top: 20px;        
+        border-right: 5px solid #E67E22;
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{ 
+        margin-bottom: 8px;
+        font-size: 0.813rem;
+        font-weight: bold;
+    }
+
+    .banner .div-principal-profissao-foto figure img {
+        position: absolute;        
+        right: 0px;
+        bottom: -10px;
+        width: 190px;        
+    }
 
 /***********************************/
 
 
 
 /**** @media ***************************************/
+
+@media (min-width: 360px) {  
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 0.875rem;        
+    }
+
+    .banner .div-principal-profissao-foto figure img {        
+        width: 200px;
+    }
+    /******/
+
+}
+
+@media (min-width: 390px) {  
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 0.938rem;        
+    }
+
+    .banner .div-principal-profissao-foto figure img {        
+        width: 240px;
+    }
+    /******/
+
+}
+
+@media (min-width: 440px) {  
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao {         
+        width: 55%;       
+    }    
+    .banner .div-principal-profissao-foto figure img {        
+        width: 280px;
+    }
+    /******/
+
+}
+
+@media (min-width: 500px) {  
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 280px;
+        height: 110px; 
+        border-right: 6px solid #E67E22;   
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 1rem;        
+    }
+
+    .banner .div-principal-profissao-foto figure img {        
+        width: 300px;
+    }
+    /******/
+
+}
+
+@media (min-width: 540px) {  
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        margin-left: 30px;
+        margin-bottom: 10px;        
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 1.063rem;        
+    }    
+    /******/
+
+}
+
+@media (min-width: 600px) {  
+
+    /* Banner */
+    .banner h1{        
+        font-size: 2rem;          
+    }
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        margin-left: 70px;
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 1.188rem;        
+    }
+
+    .banner .div-principal-profissao-foto figure img {        
+        width: 340px;
+    }
+    /******/
+}
+
+@media (min-width: 660px) { 
+
+    /* Banner */
+    .banner .div-principal-profissao-foto .div-banner-profissao {        
+        margin-bottom: 30px;
+        border-right: 7px solid #E67E22;
+    }
+    .banner .div-principal-profissao-foto figure img {        
+        width: 380px;
+    }
+    /******/
+
+}
+
+@media (min-width: 700px) { 
+
+    /* Banner */
+    .banner h1{        
+        font-size: 2.25rem;          
+    }    
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 300px;
+        margin-left: 105px;       
+        margin-bottom: 40px;
+        height: 150px;
+        border-right: 8px solid #E67E22;
+    }
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 1.375rem;        
+    }
+    .banner .div-principal-profissao-foto figure img {        
+        width: 400px;
+    }
+    /******/
+
+}
+
 @media (min-width: 769px) {   
 
     /* Header */
@@ -64,35 +282,166 @@
             display: none;
         }
 
-        nav .div-nav-tablet-descktop {
+        nav .div-nav-tablet-desktop {
             display: flex;
         }
 
-        nav .div-nav-tablet-descktop .lista-nav-menu {
+        nav .div-nav-tablet-desktop .lista-nav-menu {
             display: flex;
             flex-direction: row;           
         }
 
-        nav .div-nav-tablet-descktop .lista-nav-menu li {
+        nav .div-nav-tablet-desktop .lista-nav-menu li {
             margin-left: 20px;
             list-style: none;
         }
 
-        nav .div-nav-tablet-descktop .lista-nav-menu li a{
+        nav .div-nav-tablet-desktop .lista-nav-menu li a{
             color: #ccc;       
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
 
-        nav .div-nav-tablet-descktop .lista-nav-menu li a:hover {
+        nav .div-nav-tablet-desktop .lista-nav-menu li a:hover {
             color: #fff;            
         }
     /******/
 
 
     /* Banner */
+        .banner {
+            border-bottom: 15px solid #E67E22;
+        }
+        .banner h1{        
+            font-size: 2.5rem;          
+        }  
+        
+        .banner h1 span{
+            width: 75px;
+            border: 5px solid #0984E3;            
+        }
 
+        .banner .div-principal-profissao-foto .div-banner-profissao {
+            margin-left: 50px;       
+            margin-bottom: 40px;
+            margin-top: 40px;
+            height: 170px;
+            width: 400px;
+            border-right: 8px solid #E67E22;
+        }
+        .banner .div-principal-profissao-foto .div-banner-profissao p{         
+            font-size: 1.75rem;        
+        }
+        .banner .div-principal-profissao-foto figure img {        
+            width: 440px;
+            bottom: -15px;
+        }
+    /******/
+}
+
+@media (min-width: 860px) { 
+
+    /* Banner */   
+    .banner .div-principal-profissao-foto figure img {        
+        width: 540px;
+    }
+    /******/
+}
+
+@media (min-width: 940px) { 
+
+    /* Banner */
+    .banner h1{
+        margin-left: 50px;
+    }
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        margin-left: 95px;       
+        margin-bottom: 60px;
+        margin-top: 30px;
+        height: 180px;
+        padding-top: 40px;
+        border-right: 10px solid #E67E22;
+    }    
+    .banner .div-principal-profissao-foto figure img {        
+        width: 600px;
+    }
+
+
+    /******/
+}
+
+@media (min-width: 1024px) { 
+
+    /* Banner */
+    .banner {
+        border-bottom: 25px solid #E67E22;
+    }
+    .banner h1{        
+        font-size: 2.75rem;          
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 450px;               
+        margin-bottom: 90px;
+        margin-top: 60px;
+        height: 300px;
+        padding-top: 60px;
+        border-right: 15px solid #E67E22;
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 2rem;        
+    }   
+    .banner .div-principal-profissao-foto figure img {        
+        width: 700px;
+        bottom: -25px;
+    }    
+
+
+    /******/
+}
+
+@media (min-width: 1110px) { 
+
+    /* Banner */  
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 480px;
+    }
+
+    .banner .div-principal-profissao-foto figure img {        
+        width: 800px;    
+    }
+    /******/
+}
+
+@media (min-width: 1200px) { 
+
+    /* Banner */  
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 510px;
+    }    
+    /******/
+}
+
+@media (min-width: 1280px) { 
+
+    /* Banner */    
+    .banner h1{        
+        font-size: 3rem;          
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao {
+        width: 540px;
+        margin-left: 95px;
+    }
+
+    .banner .div-principal-profissao-foto .div-banner-profissao p{         
+        font-size: 2.25rem;        
+    }   
+    .banner .div-principal-profissao-foto figure img {        
+        width: 900px;    
+    }
     /******/
 }
 

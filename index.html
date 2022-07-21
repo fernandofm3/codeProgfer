@@ -20,24 +20,34 @@
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav id="nav-header">
                 <div class="div-nav-mobile">
-                    <!--figure class="logo-empresa">
-                        <img src="" alt="">                    
-                    </figure-->
-                    <p class="logo-empresa">codeProgfer</p>
-                    <button class="btn-nav-mobile">
-                        <span class="material-icons-outlined">
+                    <figure class="logo-empresa">
+                        <img src="./img/codeProgfer.svg" alt="">                    
+                    </figure>
+
+                    <button id="btn-nav-mobile" class="btn-nav-mobile" aria-expanded="false" aria-controls="lista-nav-menu-mibile" aria-haspopup="true" aria-label="Abrir menu.">
+                        <span class="material-icons-outlined span-btn-open">
                             menu
                         </span>
+
+                        <span class="material-icons-outlined span-btn-close">
+                            close
+                        </span>
                     </button>
+
+                    <ul class="lista-nav-menu-mobile" role="menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">EXPERIÊNCIA</a></li>
+                        <li><a href="#">CONHECIMENTOS</a></li>
+                        <li><a href="#">CONTATOS</a></li>
+                    </ul>
                 </div>
 
-                <div class="div-nav-tablet-descktop">
-                    <!--figure class="logo-empresa">
-                        <img src="" alt="">                    
-                    </figure-->
-                    <p class="logo-empresa">codeProgfer</p>
+                <div class="div-nav-tablet-desktop">
+                    <figure class="logo-empresa">
+                        <img src="./img/codeProgfer.svg" alt="">                    
+                    </figure>                    
                     <ul class="lista-nav-menu">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">EXPERIÊNCIA</a></li>
@@ -49,17 +59,26 @@
         </div>
     </header>
 
-    <section class="banner">
-        <h1></h1>
-        <div class="div-banner-proficao">
-            <h3></h3>
-            <h3></h3>
-        </div>
+    <div class="container">
+    <section class="banner">        
+        <h1>
+            Fernando F. Mendonça
+            <span></span>
+        </h1>
 
-        <figure>
-            <img src="" alt="">
-        </figure>
+        <div class="div-principal-profissao-foto">
+            <div class="div-banner-profissao">
+                <p>Programador Full Stack</p>
+                <p>Analista de TI</p>
+            </div>
+
+            <figure>
+                <img src="/img/foto.png" alt="">
+            </figure>
+        </div>
+        
     </section>
+    </div>
 
     <main>
         <section>
@@ -72,7 +91,17 @@
     </main>
 
     <footer>
+        
 
     </footer>
+
+    <!-- Scripts-->
+
+        <script type="text/javascript" src="/js/menu-mobile.js"></script>
+
+    <!--********-->
 </body>
 </html>
+
+
+
