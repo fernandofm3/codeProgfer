@@ -5,13 +5,25 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
+body {
+    background-image: url("/img/fundo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
 .container {
     max-width: 1280px;
     margin: auto;
 }
 
 /**** Headeer *********************/
-    header {        
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 1001;
+        width: 100%;               
         background-color: black;
         padding: 10px 20px 10px 20px;        
     }
@@ -89,13 +101,13 @@
 
 /**** Banner ***********************/
     .banner { 
-        position: relative;       
-        padding: 20px;
-        background-color: #fff;        
+        position: relative;
+        margin-top: 66px;      
+        padding: 20px;                
         background-image: linear-gradient(to top right, #fff, #eee, #909090);        
         border-bottom: 10px solid #E67E22;
     }
-
+    
     .banner h1{
         display: flex;
         flex-direction: column;        
@@ -136,6 +148,99 @@
         width: 190px;        
     }
 
+/***********************************/
+
+
+/**** Main *************************/
+    main {
+        padding: 20px;
+        background-color: #000;
+    }
+
+    /* Section Experiência */ 
+    .sec-experiencia {
+        display: flex;
+        flex-direction: column;        
+    } 
+
+    /* Article Experiência */      
+    .sec-experiencia .art-experiencia {
+        margin-bottom: 25px;
+        color:#fff;
+    }
+
+    .sec-experiencia .art-experiencia h2 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 1.25rem;
+    }
+
+    .sec-experiencia .art-experiencia p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Article Formação */
+    .sec-experiencia .art-formacao {        
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .sec-experiencia .art-formacao .div-sombra-formacao {
+        width: 90%;
+        height: 260px;
+        background-color: #000;
+        border: 2px solid #999;
+        border-radius: 10px;
+    }
+
+    .sec-experiencia .art-formacao .div-formacao {
+        position: absolute;
+        top: 30px;
+        width: 90%;
+        height: 260px;
+        margin-left: 10%;
+        background-color: #E67E22;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao {    
+        display: flex;
+        flex-direction: column;                
+        margin-bottom: 15px;
+    }
+
+    .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;      
+        font-size: 1.25rem;       
+    }
+
+    .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 span {             
+        font-size: 1.875rem;
+        margin-top: -3px;
+        margin-right: 7px;       
+    }
+
+
+    .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao .span-barra-titulo-formacao {
+        display: block;
+        width: 42px;
+        border: 3px solid #000;
+        margin-top: 8px;
+    }
+
+    .sec-experiencia .art-formacao .div-formacao .div-formacao-curso {
+        margin-bottom: 10px;        
+        border-left: 4px solid #000;
+        padding: 3px 0 3px 10px;
+
+    }
+
+    .sec-experiencia .art-formacao .div-formacao .div-formacao-curso h4, p{
+        font-size: 0.875rem;
+    }
 /***********************************/
 
 
@@ -236,6 +341,30 @@
         width: 340px;
     }
     /******/
+
+
+    /* Main */
+
+        /* Section Experiência*/
+        .sec-experiencia {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;        
+        } 
+
+        .sec-experiencia .art-experiencia, .art-formacao {
+            width: 50%;
+        }
+
+        .sec-experiencia .art-experiencia {
+            margin-right: 20px;
+        }
+
+        /* Article Formação */        
+
+    /********/
+
 }
 
 @media (min-width: 660px) { 
@@ -328,7 +457,7 @@
             margin-top: 40px;
             height: 170px;
             width: 400px;
-            border-right: 8px solid #E67E22;
+            border-right: 10px solid #E67E22;
         }
         .banner .div-principal-profissao-foto .div-banner-profissao p{         
             font-size: 1.75rem;        
@@ -338,6 +467,18 @@
             bottom: -15px;
         }
     /******/
+
+        /* Main */
+
+        /* Section Experiência*/
+
+        /* Article Formação */
+        .sec-experiencia .art-formacao .div-formacao .div-formacao-curso h4, p{
+            font-size: 1rem;
+        }
+
+    /********/
+
 }
 
 @media (min-width: 860px) { 
@@ -361,14 +502,24 @@
         margin-top: 30px;
         height: 180px;
         padding-top: 40px;
-        border-right: 10px solid #E67E22;
+        border-right: 13px solid #E67E22;
     }    
     .banner .div-principal-profissao-foto figure img {        
         width: 600px;
     }
-
-
     /******/
+
+    /* Main */
+
+    main {
+        padding: 50px;        
+    }   
+
+    /* Section Experiência*/    
+    
+    /* Article Formação */     
+
+/********/
 }
 
 @media (min-width: 1024px) { 
@@ -396,10 +547,31 @@
     .banner .div-principal-profissao-foto figure img {        
         width: 700px;
         bottom: -25px;
-    }    
-
-
+    }
     /******/
+
+       /* Main */
+
+        /* Section Experiência*/
+        .sec-experiencia .art-experiencia h2 {           
+            font-size: 1.625rem;
+        }
+    
+        .sec-experiencia .art-experiencia p {            
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+        
+        /* Article Formação */ 
+        .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 {                 
+            font-size: 1.375rem;       
+        }
+        
+        .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 span {                 
+            font-size: 2rem;       
+        } 
+
+    /********/
 }
 
 @media (min-width: 1110px) { 
@@ -443,6 +615,48 @@
         width: 900px;    
     }
     /******/
+
+    /* Main */
+
+        /* Section Experiência*/
+        .sec-experiencia .art-experiencia h2 {           
+            font-size: 2.25rem;
+        }
+    
+        .sec-experiencia .art-experiencia p {
+            font-size: 1.625rem;
+            line-height: 2.25rem;            
+        }
+        
+        /* Article Formação */ 
+
+        .sec-experiencia .art-formacao .div-sombra-formacao {            
+            height: 330px;                       
+        }
+
+        .sec-experiencia .art-formacao .div-formacao {           
+            height: 330px;            
+            padding: 25px 25px 25px 35px;
+        }
+
+        .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 {                 
+            font-size: 1.75rem;       
+        }
+        
+        .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao h2 span {                 
+            font-size: 2.063em;       
+        }
+
+        .sec-experiencia .art-formacao .div-formacao .div-titulo-formacao .span-barra-titulo-formacao {            
+            width: 72px;
+            border: 4px solid #000;            
+        }
+
+        .sec-experiencia .art-formacao .div-formacao .div-formacao-curso h4, p {
+            font-size: 1.25rem;
+        }  
+        
+        
 }
 
 /***************************************************/
