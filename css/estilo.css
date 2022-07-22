@@ -18,13 +18,25 @@ body {
     margin: auto;
 }
 
+.btn-voltar-ao-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    transition: 0.3s;
+}
+
+.btn-voltar-ao-topo:hover {   
+    width: 55px;
+}
+
 /**** Headeer *********************/
     header {
         position: fixed;
         top: 0;
         z-index: 1001;
         width: 100%;               
-        background-color: black;
+        background-color: #111;
         padding: 10px 20px 10px 20px;        
     }
     
@@ -597,6 +609,13 @@ body {
 }
 
 @media (min-width: 1280px) { 
+
+    /* Header */    
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*********/
 
     /* Banner */    
     .banner h1{        
