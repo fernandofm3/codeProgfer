@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codeProgfer</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
@@ -19,8 +20,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav id="nav-header">
+        <nav id="nav-header">
+            <div class="container">            
                 <div class="div-nav-mobile">
                     <a href="#" class="logo-empresa">
                         <img src="./img/codeProgfer.svg" alt="">                    
@@ -54,9 +55,9 @@
                         <li><a href="#">CONHECIMENTOS</a></li>
                         <li><a href="#">CONTATOS</a></li>
                     </ul>
-                </div>
-            </nav>
-        </div>
+                </div>            
+            </div>
+        </nav>
     </header>
     
     <section class="banner container">        
@@ -132,13 +133,15 @@
 
     </footer>
 
-    <a href="#">
-        <img src="/img/foguete.png" class="btn-voltar-ao-topo" alt="Voltar ao topo.">
-    </a>
+    
+    <img src="/img/foguete.png" class="btn-voltar-ao-topo" id="btn-voltar-ao-topo" alt="Voltar ao topo" onclick="voltarAoTopo()">
+    
 
     <!-- Scripts-->
 
         <script type="text/javascript" src="/js/menu-mobile.js"></script>
+        <!--script type="text/javascript" src="/js/btn-voltar-ao-topo.js"></script-->
+        <script type="text/javascript" src="/js/efeito-navbar.js"></script>
 
     <!--********-->
 </body>
