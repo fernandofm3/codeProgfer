@@ -32,7 +32,7 @@ body {
 }
 
 .btn-voltar-ao-topo:hover {   
-    width: 45px;
+    opacity: 0.8;    
 }
 
 /**** Headeer *********************/    
@@ -146,43 +146,18 @@ body {
     }
 
     .banner .div-principal-profissao-foto .div-banner-profissao {
-        /*width: 60%;
+        width: 60%;
         height: 90px;        
         margin-top: 30px;        
         padding-top: 20px;        
-        border-right: 5px solid #E67E22;*/ 
-        
-        /*background-image: url("/img/imac-g4a54bfcf4_1920.png");
-        background-attachment: center;
-        background-position: left;    
-        background-repeat: no-repeat; 
-        background-size: 550px 300px;*/  
+        border-right: 5px solid #E67E22;
     }
 
-    .banner .div-principal-profissao-foto .figura-codProgfer {       
-        margin-top: 60px;
-        margin-bottom: 80px;
-        margin-left: 60px;
-        
-        /*box-shadow: 3px 2px 10px 4px #888;        
-        /*border-top-left-radius: 50px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 15px;*/
-    }
-
-    .banner .div-principal-profissao-foto .figura-codProgfer img {
-        position: initial;       
-        width: 50%;
-        border: 1px solid #000;
-        border-radius: 50% 50% 50% 50%;
-    }
-
-    /*.banner .div-principal-profissao-foto .div-banner-profissao p{ 
+    .banner .div-principal-profissao-foto .div-banner-profissao p{ 
         margin-bottom: 8px;
         font-size: 0.813rem;
         font-weight: bold;
-    }*/
+    }
 
 
     .banner .div-principal-profissao-foto figure img {
@@ -359,6 +334,62 @@ body {
 /***********************************/
 
 
+/**** Footer ***********************/  
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        background-color: #111;
+        padding: 50px 20px 20px 20px;
+    }
+
+    footer .logo-footer img {
+        width: 240px;        
+        margin-bottom: 60px;
+    }
+
+    footer .media-social-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 260px;
+        margin-bottom: 40px;
+        list-style-type: none;
+    }
+
+    footer .media-social-footer li a img{
+        width: 60px;
+        background-color: #fff;
+        border-radius: 7px;
+        transition: 0.3s;        
+    }
+
+    footer .media-social-footer li .logo-media-instagram img {
+        background-color: #111;    
+    }
+
+    footer .media-social-footer li a img:hover {
+        opacity: 0.8;
+    }
+
+    footer .email-footer {
+        color: #ccc;
+        font-size: 1.438rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 80px;        
+    }
+
+    footer .copyrigth-footer {
+        color: #ccc;
+        font-size: 1rem;        
+        text-align: center;
+        margin-bottom: 30px;        
+    }
+
+/***********************************/
+
 
 /**** @media ***************************************/
 
@@ -420,6 +451,11 @@ body {
         width: 300px;
     }
     /******/
+
+    /* Footer */
+    footer .email-footer {        
+        font-size: 1.75rem;              
+    }
 
 }
 
@@ -680,10 +716,6 @@ body {
         right: 20px;
         width: 50px;        
     }
-    
-    .btn-voltar-ao-topo:hover {   
-        width: 45px;
-    }
 
     /* Banner */
     .banner {
@@ -841,21 +873,13 @@ body {
         right: 50px;
         width: 50px;        
     }
-    
-    .btn-voltar-ao-topo:hover {   
-        width: 45px;
-    }    
 }
 
 @media (min-width: 1920px) { 
     .btn-voltar-ao-topo {       
-        right: 110px;
+        right: 150px;
         width: 60px;        
-    }
-    
-    .btn-voltar-ao-topo:hover {   
-        width: 55px;
-    }    
+    }   
 }
 
 /***************************************************/
