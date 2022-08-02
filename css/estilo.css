@@ -142,7 +142,7 @@ nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #000;  
+    background-color: #111;  
     margin-top: -4px;      
 } 
 
@@ -173,7 +173,7 @@ nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {
 .sec-experiencia .art-formacao .div-sombra-formacao {
     width: 90%;
     height: 380px;
-    background-color: #000;
+    background-color: #111;
     border: 2px solid #999;
     border-radius: 10px;
 }
@@ -234,27 +234,46 @@ nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {
     padding: 20px;        
 }
 
+.sec-conhecimentos h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.625rem;
+    font-weight: bold;    
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 35px;    
+}
+
+.sec-conhecimentos h2 span {
+    font-size: 1.625rem;
+    font-weight: bold;    
+    color: #333;
+    margin-right: 5px;
+}
+
 .sec-conhecimentos .div-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .sec-conhecimentos .div-cards .card {    
     margin-bottom: 30px;
-    width: 100%;            
+    width: 47%;            
 }
 
 .sec-conhecimentos .div-cards .card img {
     width: 100%;    
     border-radius: 10px;
-    box-shadow: 3px 2px 10px 4px #888;
+    box-shadow: 3px 2px 10px 4px #888;    
     transition: 0.3s;
 }
 
 .sec-conhecimentos .div-cards .card img:hover {        
-    box-shadow: 5px 4px 14px 6px #888;        
+    box-shadow: 5px 4px 14px 6px #777;            
 }
 /***********************************/
 
@@ -446,6 +465,13 @@ footer .copyrigth-footer {
     }
 
     /* Section conhecimentos */
+    .sec-conhecimentos h2 {
+        font-size: 2rem;        
+    }
+
+    .sec-conhecimentos h2 span {
+        font-size: 2rem;        
+    }
     
     /********/
 
@@ -466,6 +492,11 @@ footer .copyrigth-footer {
     
     .sec-conhecimentos {
         padding: 50px;
+    }
+
+    .sec-conhecimentos h2 {        
+        margin-top: 0; 
+        margin-bottom: 40px;
     }
 
     .sec-conhecimentos .div-cards .card {            
@@ -546,11 +577,15 @@ footer .copyrigth-footer {
     p {
         font-size: 1.25rem;
     }
-    
-    /* Section conhecimentos */    
-    /*.sec-conhecimentos .div-cards .card {
-        width: 31%;
-    } */      
+
+     /* Section conhecimentos */
+    .sec-conhecimentos h2 {        
+        font-size: 2.25rem;        
+    }
+
+    .sec-conhecimentos h2 span {
+        font-size: 2.25rem;        
+    }
 }
 
 @media (min-width: 1600px) { 
