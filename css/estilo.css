@@ -5,8 +5,13 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
+/*### Deixa a rolagem do site de fora suave ###*/
 html {
     scroll-behavior: smooth;
+}
+/*### Adiciona uma margin no top da view port, assim qunado a rolagem até um elemento acontecer não será cortado parte do conteúdo ###*/
+:target {
+    scroll-margin-top: 4rem;
 }
 
 body {
