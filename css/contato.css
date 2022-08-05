@@ -1,0 +1,103 @@
+.sec-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 120px 20px 60px 20px; 
+    background: rgb(0,0,0);
+    background: linear-gradient(59deg, rgba(0,0,0,1) 0%, rgba(25,87,88,1) 59%, rgba(0,0,0,1) 100%); 
+}
+
+.sec-email form h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.463rem;
+}
+
+.sec-email form h1 span{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.sec-email form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;        
+}
+
+.sec-email form label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sec-email form input {
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 7px;
+    background-color: #eee;
+    font-size: 1rem;
+}
+
+.sec-email form textarea {
+    height: 100px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+.sec-email form button {
+    width: 100%;    
+    margin-top: 35px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    background-color: #d35400;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec-email form button:hover {    
+    background-color: #b14701;
+}
+
+
+/**** @media ***************************************/
+@media (min-width: 769px) { 
+    
+    .sec-email {        
+        height: 100vh;
+        padding: 120px 20px 100px 20px;    
+    }
+
+    .sec-email form h1 {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+    }
+
+    .sec-email form h1 span {
+        font-size: 2.25rem;        
+    }
+
+    .sec-email form {
+        width: 70%;    
+    }
+
+    .sec-email form label {
+        font-size: 1.25rem;
+    }
+
+    .sec-email form button {
+        width: 30%;        
+    }
+    
+}
+

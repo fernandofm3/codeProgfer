@@ -4,7 +4,7 @@ const linkMenuMobileHome = document.getElementById('link-mobile-home');
 const linkMenuMobileExperiencia = document.getElementById('link-mobile-experiencia');
 const linkMenuMobileConhecimentos = document.getElementById('link-mobile-conhecimentos');
 const linkMenuMobileSocial = document.getElementById('link-mobile-social');
-
+const linkMenuMobileContato = document.getElementById('link-mobile-contato');
 
 function mostraMenuMobile (event) {
 
@@ -42,6 +42,7 @@ linkMenuMobileHome.addEventListener('click', mostraMenuMobile);
 linkMenuMobileExperiencia.addEventListener('click', mostraMenuMobile);
 linkMenuMobileConhecimentos.addEventListener('click', mostraMenuMobile);
 linkMenuMobileSocial.addEventListener('click', mostraMenuMobile);
+linkMenuMobileContato.addEventListener('click', mostraMenuMobile);
 
 //Melhora a fluidez no mobobile
 btnMobile.addEventListener('touchstart', mostraMenuMobile);

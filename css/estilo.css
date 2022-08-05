@@ -147,7 +147,8 @@ nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #111;  
+    background: rgb(0,0,0);
+    background: linear-gradient(59deg, rgba(0,0,0,1) 0%, rgba(25,87,88,1) 59%, rgba(0,0,0,1) 100%);      
     margin-top: -4px;      
 } 
 
@@ -178,7 +179,7 @@ nav .div-nav-mobile .lista-nav-menu-mobile li a:hover {
 .sec-experiencia .art-formacao .div-sombra-formacao {
     width: 90%;
     height: 380px;
-    background-color: #111;
+    background-color: transparent;
     border: 2px solid #999;
     border-radius: 10px;
 }
