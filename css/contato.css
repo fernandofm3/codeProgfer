@@ -69,6 +69,68 @@
     background-color: #b14701;
 }
 
+/* Página de agradecimento pelo contato */
+.sec-email .titulo-obrigado-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.463rem;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+
+.sec-email .titulo-obrigado-contato span{
+    margin-bottom: 20px;
+    font-size: 2.75rem;    
+}
+
+.sec-email .div-text-obrigado-contato {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.sec-email .div-text-obrigado-contato .texto-obrigado-contato {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.sec-email .texto-social-obrigado-contato {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sec-email .link-social-obrigado-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    padding: 10px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sec-email .link-social-obrigado-contato:hover {    
+    background-color: #b14701;
+    color: #eee;
+    border: 1px solid #eee;
+
+}
+
+.sec-email .link-social-obrigado-contato span {
+    margin-right: 8px;
+}
 
 /**** @media ***************************************/
 @media (min-width: 769px) { 
@@ -98,6 +160,23 @@
     .sec-email form button {
         width: 30%;        
     }
+
+    /* Página de agradecimento pelo contato */
+    .sec-email .titulo-obrigado-contato {       
+        font-size: 2rem;           
+    }
+
+    .sec-email .titulo-obrigado-contato span{
+        margin-bottom: 20px;
+        font-size: 3rem;    
+    }
+
+    .sec-email .div-text-obrigado-contato .texto-obrigado-contato {
+        font-size: 1.25rem;        
+    } 
     
+    .sec-email .texto-social-obrigado-contato {       
+        font-size: 1.125rem;        
+    }
 }
 

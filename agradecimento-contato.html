@@ -43,7 +43,7 @@
                         <li><a id="link-mobile-experiencia" href="index.html#experiencia">EXPERIÊNCIA</a></li>                        
                         <li><a id="link-mobile-conhecimentos" href="index.html#conhecimentos">CONHECIMENTOS</a></li>                        
                         <li><a id="link-mobile-social" href="#social">SOCIAL</a></li>                        
-                        <li><a id="link-mobile-contato" href="#contato">CONTATO</a></li>
+                        <li><a id="link-mobile-contato" href="contato.html">CONTATO</a></li>
                     </ul>
                 </div>
 
@@ -56,7 +56,7 @@
                         <li><a href="index.html#experiencia">EXPERIÊNCIA</a></li> 
                         <li><a href="index.html#conhecimentos">CONHECIMENTOS</a></li>                       
                         <li><a href="#social">SOCIAL</a></li>                        
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </div>            
             </div>
@@ -64,30 +64,32 @@
     </header>
 
     <main class="container">
-        <section id="contato" class="sec-email">
-          
-            <form action="https://formsubmit.co/fernandofm3@gmail.com" method="POST">
+        <section class="sec-email">
 
-                <h1>
-                    <span class="material-icons-outlined">email</span>
-                    Envie uma mesagem
-                </h1>
+            <h1 class="titulo-obrigado-contato">
+                <span class="material-icons-outlined">thumb_up_alt</span>
+                Sua mensagem foi enviada com sucesso!
+            </h1>
 
-                <label for="nome"> * Nome</label>
-                <input type="text" id="nome" name="name" placeholder="Digite seu seu nome completo" required>
+            <div class="div-text-obrigado-contato">
+                <p class="texto-obrigado-contato">                
+                    Obrigado pela visita em meu site, você é sempre bem-vindo.                
+                </p>
 
-                <label for="email">* Email</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail de contato" required>
-                
-                <label for="mesagem">* Mensagem</label>
-                <textarea type="text" id="mensagem" name="mensagem" placeholder="Deixe sua mensagem" required></textarea>
+                <p class="texto-obrigado-contato">                
+                    Em breve retornarei o contato.
+                </p>          
+            </div>
 
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento-contato.html">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <button type="submit">ENVIAR</button>
+            <p class="texto-social-obrigado-contato"> 
+                Conheça também minhas redes sociais.
+            </p> 
 
-            </form>
+            <a class="link-social-obrigado-contato" href="#social">
+                <span class="material-icons-outlined">share</span>
+                Social
+            </a>
+
         </section>
     </main>
 
