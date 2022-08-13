@@ -52,6 +52,10 @@
 }
 
 .sec-email form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;    
     margin-top: 35px;
     padding: 20px;
@@ -67,6 +71,12 @@
 
 .sec-email form button:hover {    
     background-color: #b14701;
+}
+
+.sec-email form button img {
+    display: none;
+    width: 20px;
+    margin-right: 10px;    
 }
 
 /* Página de agradecimento pelo contato */
@@ -131,6 +141,8 @@
 .sec-email .link-social-obrigado-contato span {
     margin-right: 8px;
 }
+
+
 
 /**** @media ***************************************/
 @media (min-width: 769px) { 
